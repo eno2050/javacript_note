@@ -25,12 +25,35 @@
 */
 example:
 	var student = {'name':'lilei'}
-	var s1 = name;
-	var s2 = age;
-	console.log(s1 in studnet);
+	var s1 = 'name';
+	var s2 = 'age';
+	console.log(s1 in student);
 
-	result: True
+	result: true
 
+引申：其他方法判读对象是否存在该属性
+
+> if (s1 in student){}
+
+> var has = false;
+
+for (var k in student){
+	if(k==s1){
+		has = ture
+	}
+}
+
+> if (student.age){
+
+}else{
+
+
+}
+
+> if (student[s1]){
+
+}else{
+}
 ```
 
 
