@@ -18,10 +18,18 @@
 
 > 这里引出一个函数
 
-```
-操作符：in
-@return: boolean
-语法：'name' in object
+```javascript
+/*操作符：in
+*@return: boolean
+*语法：'name' in object
+*/
+example:
+	var student = {'name':'lilei'}
+	var s1 = name;
+	var s2 = age;
+	console.log(s1 in studnet);
+
+	result: True
 
 ```
 
