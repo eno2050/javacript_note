@@ -2,7 +2,7 @@
 学习笔记
 1. javascript 包含 ECMA BOM DOM
 2. javascript 类型 字符串string 数字number 布尔值boolen 都是小写
-3. javascript 的复合类型 
+3. javascript 的复合类型,所有的复合类型都是引用类型  
 
 |类型|描述|
 |:-:|:-:|
@@ -34,30 +34,45 @@ example:
 
 	result: true
 
-引申：其他方法判读对象是否存在该属性
+```
 
-> if (s1 in student){}
+* 引申：其他方法判读对象是否存在该属性
 
-> var has = false;
+* 方法一：
 
-for (var k in student){
-	if(k==s1){
-		has = ture
+```javascript
+
+	if (s1 in student){}
+
+```
+
+```javascript
+
+	var has = false;
+
+	for (var k in student){
+		if(k==s1){
+			has = ture
+		}
 	}
-}
+```
 
-> if (student.age){
+```javascript
 
-}else{
+	if (student.age){
+
+	}else{
 
 
-}
+	}
+```
 
-> if (student[s1]){
+```javascript
 
-}else{
-}
+	if (student[s1]){
 
+	}else{
+	}
 ```
 
 * 按值传递：将变量中的数据完整的拷贝一份，赋值给新的变量
