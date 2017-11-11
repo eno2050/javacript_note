@@ -111,5 +111,34 @@ example2:
 	*/
 
 ```
+example3: 一个特殊的函数，很重要的技巧
+
+```javascript
+	
+	
+	//判断num是否存在，如果存在就输出num,否则就输出没有参数 
+	//方法一
+	function fn(num){
+		if(num !== undefined){
+			console.log(num)
+		}else{
+			console.log('没有参数')
+		}
+	}
+	//方法二：三元运算符
+	function fn2(num){
+		num !== undefined ? console.log(num):console.log('没有参数')
+	}
+	//方法三：短路
+	function fn3(num){
+		//如果num存在，就直接赋值给num,否则就是赋值后面的
+		num = num || '没有参数'
+	}
+	//方法四：&& 这个方法一般用作能力检测
+	//表达式1 && 表达式2 && 表达式3
+	//如果第一个表达式为假，就返回第一个表达式，如果为真就返回第二个表达式
+	
 
 
+
+```
