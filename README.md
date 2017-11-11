@@ -22,6 +22,9 @@
 /*操作符：in
 *@return: boolean
 *语法：'name' in object
+*对象就是一个键值对的集合
+*鸭子辨型
+*重要：值类型和引用类型
 */
 example:
 	var student = {'name':'lilei'}
@@ -54,12 +57,43 @@ for (var k in student){
 
 }else{
 }
+
 ```
 
+* 按值传递：将变量中的数据完整的拷贝一份，赋值给新的变量
 
+example1:
 
+```javascript
+	var str = '123';
+	//此时内存中有2个123的副本
+	var str1 = str;
+	console.log('str='+str+',str1='+str1);
+	str = '456';
+	console.log('str='+str+',str1='+str1);
+	
+	/*
+	str=123,str1=123
+	str=456,str1=123
+	*/
+```
+* 引用类型：变量中存储的是数据的地址
 
+example2:
 
+```javascript
+	var o = {'n':'123'}
+	var o2 = o
+	//内存中只有一个数据对象，将o的地址复制一份赋值给o2,既o2和o共享同一个数据
 
+	console.log('o.n='+o.n+',o2.n='+o2.n)
+	o.n = '456'
+	console.log('o.n='+o.n+',o2.n='+o2.n)
+	/*
+		o.n=123,o2.n=123
+		o.n=456,o2.n=456
+	*/
+
+```
 
 
