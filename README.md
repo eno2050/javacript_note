@@ -38,13 +38,14 @@ example:
 
 * 引申：其他方法判读对象是否存在该属性
 
-* 方法一：
+* 方法1:
 
 ```javascript
 
 	if (s1 in student){}
 
 ```
+* 方法2：
 
 ```javascript
 
@@ -56,7 +57,7 @@ example:
 		}
 	}
 ```
-
+* 方法3：
 ```javascript
 
 	if (student.age){
@@ -66,7 +67,7 @@ example:
 
 	}
 ```
-
+* 方法4：
 ```javascript
 
 	if (student[s1]){
