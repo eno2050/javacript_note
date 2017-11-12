@@ -142,3 +142,16 @@ example3: 一个特殊的函数，很重要的技巧
 
 
 ```
+example4: delete
+
+```javascript
+	
+	/*
+	语法：boolean delete 数据
+	1.删除数组元素，相当于把对应的键值所在的数据变成undefined,数组长度本身不发生变化
+	2.删除对象的属性和方法
+	3.删除没有用var声明的变量
+	*/
+
+
+```
